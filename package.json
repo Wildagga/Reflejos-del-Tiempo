@@ -6,7 +6,11 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:href": "ng build --base-href ./",
+    "delete:docs": "rmdir /s /q docs",
+    "copy:dist": "xcopy dist\\reflejos-del-tiempo docs\\",
+    "build:github": "npm run delete:docs && npm run build:href && npm run copy:dist"
   },
   "private": true,
   "dependencies": {
