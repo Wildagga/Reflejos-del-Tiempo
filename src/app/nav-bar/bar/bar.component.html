@@ -1,0 +1,37 @@
+<!--ul>
+    <li>
+        <a href="">Ejemplo 1</a>
+    </li>
+    <li>
+        <a href="">Ejemplo 2</a>
+    </li>
+    <li>
+        <a href="">Ejemplo 3</a>
+    </li>
+    <li>
+        <a href="">Ejemplo 4</a>
+    </li>
+    <li>
+        <a href="">Ejemplo 5</a>
+    </li>
+    <li>
+        <a href="">Ejemplo 6</a>
+    </li>
+</ul-->
+<div class="topnav">
+    <a href="#home" class="active">Logo</a>
+    <div id="myLinks">
+        <a href="#news" (click)="activateNewsDisplay()">News</a>
+        <div id="news">
+            <a href="#news1" class="subLink">   News 1</a>
+            <a href="#news2" class="subLink">   News 2</a>
+            <a href="#news3" class="subLink">   News 3</a>
+            <a href="#news4" class="subLink">   News 4</a>
+        </div>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" (click)="myFunction()">
+        <i class="fa fa-bars"><img src="assets/ic_fluent_grid_24_regular.svg" alt=""></i>
+    </a>
+</div>
