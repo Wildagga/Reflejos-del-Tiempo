@@ -6,30 +6,32 @@ import { Component } from '@angular/core';
   styleUrls: ['./bar.component.css']
 })
 export class BarComponent {
-
-  myLinks = document.getElementById("myLinks");
-  news = document.getElementById("myLinks");
-  myFunction() {
-    if (!this.myLinks)
-      this.myLinks = document.getElementById("myLinks");
-    if (!this.news)
-      this.news = document.getElementById("news");
-    if (this.myLinks!.style.display === "block") {
-      this.myLinks!.style.display = "none";
+  
+  openNavMenu() {
+      let myLinks = document.getElementById("myLinks");
+      let news = document.getElementById("news");
+    if (myLinks!.style.display === "block") {
+      myLinks!.style.display = "none";
     } else {
-      this.myLinks!.style.display = "block";
-      this.news!.style.display = "none";
+      myLinks!.style.display = "block";
+      news!.style.display = "none";
     }
   }
 
   activateNewsDisplay() {
-    if (!this.news) {
-      this.news = document.getElementById("news");
-    }
-    if (this.news?.style.display === "block") {
-      this.news.style.display = "none";
+    let news = document.getElementById("news");
+    if (news?.style.display === "block") {
+      news.style.display = "none";
     } else {
-      this.news!.style.display = "block";
+      news!.style.display = "block";
     }
+  }
+
+  openNav() {
+    document.getElementById("mobile-menu")!.style.width = "100%";
+  }
+
+  closeNav() {
+    document.getElementById("mobile-menu")!.style.width = "0%";
   }
 }

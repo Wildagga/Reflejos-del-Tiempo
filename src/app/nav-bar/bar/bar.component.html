@@ -1,27 +1,19 @@
-<!--ul>
-    <li>
-        <a href="">Ejemplo 1</a>
-    </li>
-    <li>
-        <a href="">Ejemplo 2</a>
-    </li>
-    <li>
-        <a href="">Ejemplo 3</a>
-    </li>
-    <li>
-        <a href="">Ejemplo 4</a>
-    </li>
-    <li>
-        <a href="">Ejemplo 5</a>
-    </li>
-    <li>
-        <a href="">Ejemplo 6</a>
-    </li>
-</ul-->
-<div class="topnav">
-    <a href="#home" class="active">Logo</a>
-    <div id="myLinks">
-        <a href="#news" (click)="activateNewsDisplay()">News</a>
+<header class="topnav">
+    <div class="logo"><img src="assets/ic_fluent_grid_24_regular.svg" alt="Logo"></div>
+    <div id="myLinks" class="nav-links">
+        <ul>
+            <li>
+                <a href="#news">News</a>
+                <!--ul>
+                    <li><a href="#news1">News 1</a></li>
+                    <li><a href="#news2">News 2</a></li>
+                    <li><a href="#news3">News 3</a></li>
+                </ul-->
+            </li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+            <!--a href="#news">News</a>
         <div id="news">
             <a href="#news1" class="subLink">   News 1</a>
             <a href="#news2" class="subLink">   News 2</a>
@@ -29,9 +21,36 @@
             <a href="#news4" class="subLink">   News 4</a>
         </div>
         <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+        https://www.youtube.com/watch?v=NfVLin2MZBI
+        https://github.com/jdocdev/NavbarFleboxResponsive/blob/main/styles.css
+        https://jdocdev.github.io/NavbarFleboxResponsive/
+        file:///d%3A/jrr_/Desktop/Nueva%20carpeta/bar.component.html
+        <a href="#about">About</a-->
     </div>
-    <a href="javascript:void(0);" class="icon" (click)="myFunction()">
+    <!--a href="javascript:void(0);" class="icon" (click)="openNavMenu()">
         <i class="fa fa-bars"><img src="assets/ic_fluent_grid_24_regular.svg" alt=""></i>
-    </a>
-</div>
+    </a-->
+    <a (click)="openNavMenu()" class="menu" ><button>Menu</button></a>
+
+        <!--div class="logo">
+            <img src="" alt="Logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Project</a></li>
+                <li><a href="about">About</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="button"><button>Contact</button></a>
+        <a (click)="openNav()" href="#" class="menu">Menu</a>
+        <div class="overlay" id="mobile-menu">
+            <a (click)="closeNav()" href="#" class="close">&times;</a>
+            <div class="overlay-content">
+                <a href="#">Services</a>
+                <a href="#">Projects</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </div-->
+</header>
