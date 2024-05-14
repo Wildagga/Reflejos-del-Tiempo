@@ -1,5 +1,5 @@
 .topnav {
-    background-color: #1b3039;
+    background-color: #cdb4db;
     width: 80%;
     display: flex;
     /*justify-content: flex-end;*/
@@ -15,7 +15,7 @@
 }
 
 .topnav .nav-links a:hover {
-    color:#f149fa;
+    color:#ffafcc;
 }
 
 .topnav .nav-links {
@@ -26,6 +26,11 @@
     display: inline-block;
     padding: 0 20px;
     transition: all 0.3s;
+}
+
+.topnav .nav-links li a {
+    font-size: 36px;
+    font-weight: 700;
 }
 
 .topnav .nav-links li:hover {
@@ -57,6 +62,64 @@
 
 .menu {
     display: none;
+}
+
+.topnav .menu button {
+    margin-left: 20px;
+    font-weight: 700;
+    color: #000000;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.topnav .menu button:hover {
+    transform: scale(1.2);
+}
+
+.topnav .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(189, 224, 254, .95);
+    overflow: hidden;
+    transition: all 0.3s ease 0s; 
+}
+
+.topnav .overlay .overlay-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.topnav .overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: #eceff1;
+}
+
+.topnav .overlay a:hover,
+.topnav .overlay a:focus {
+    color: #ffafcc;
+    transform: scale(1.2);
+}
+
+.topnav .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
 }
 
 @media screen and (max-width: 800px){

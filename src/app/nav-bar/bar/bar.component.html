@@ -21,16 +21,20 @@
             <a href="#news4" class="subLink">   News 4</a>
         </div>
         <a href="#contact">Contact</a>
-        https://www.youtube.com/watch?v=NfVLin2MZBI
-        https://github.com/jdocdev/NavbarFleboxResponsive/blob/main/styles.css
-        https://jdocdev.github.io/NavbarFleboxResponsive/
-        file:///d%3A/jrr_/Desktop/Nueva%20carpeta/bar.component.html
         <a href="#about">About</a-->
     </div>
     <!--a href="javascript:void(0);" class="icon" (click)="openNavMenu()">
         <i class="fa fa-bars"><img src="assets/ic_fluent_grid_24_regular.svg" alt=""></i>
     </a-->
-    <a (click)="openNavMenu()" class="menu" ><button>Menu</button></a>
+    <a (click)="openNav()" class="menu" ><button>Menu</button></a>
+    <div class="overlay" id="mobile-menu">
+        <a (click)="closeNav()" class="close">&times;</a>
+        <div (click)="closeNav()" class="overlay-content">
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+    </div>
 
         <!--div class="logo">
             <img src="" alt="Logo">

@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class BarComponent {
   
   openNavMenu() {
-      let myLinks = document.getElementById("myLinks");
-      let news = document.getElementById("news");
+    let myLinks = document.getElementById("myLinks");
+    let news = document.getElementById("news");
     if (myLinks!.style.display === "block") {
       myLinks!.style.display = "none";
     } else {
