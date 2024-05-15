@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./bar.component.css']
 })
 export class BarComponent {
+
+  hoverEvent( id: string, isEntering: boolean ) {
+    let component = document.getElementById(id);
+    component!.style.display = isEntering ? "block" : "none";
+  }
   
   openNavMenu() {
     let myLinks = document.getElementById("myLinks");
