@@ -1,40 +1,22 @@
 <header class="topnav">
-    <div class="logo"><img src="assets/ic_fluent_grid_24_regular.svg" alt="Logo"></div>
+    <div class="logo"><a href="#"><img src="assets/ic_fluent_grid_24_regular.svg" alt="Logo"></a></div>
     <div id="myLinks" class="nav-links">
         <ul>
-            <li (mouseenter)="hoverEvent('dropdown-news', true)" 
-            (mouseleave)="hoverEvent('dropdown-news', false)">
-                <a href="#news">News</a>
-                <div class="dropdown" id="dropdown-news">
-                    <ul>
-                        <li><a href="#news1">News 1</a></li>
-                        <li><a href="#news2">News 2</a></li>
-                        <li><a href="#news3">News 3</a></li>
-                    </ul>
-                </div>
+            <li><a href="#cosmetica">Cosmética</a></li>
+            <li><a href="#hidrotermal">Hidrotermal</a></li>
+            <li><a href="#masaje">Masaje</a></li>
+            <li><a href="#tratamientos">Tratamientos</a></li>
+            <li (mouseenter)="hoverEvent('dropdown-otros', true)" 
+            (mouseleave)="hoverEvent('dropdown-otros', false)" >
+                <a href="#otros">Otros</a>
             </li>
-            <li (mouseenter)="hoverEvent('dropdown-contact', true)" 
-            (mouseleave)="hoverEvent('dropdown-contact', false)">
-                <a href="#contact">Contact</a>
-                <div class="dropdown" id="dropdown-contact">
-                    <ul>
-                        <li><a href="#contact1">Contact 1</a></li>
-                        <li><a href="#contact2">Contact 2</a></li>
-                        <li><a href="#contact3">Contact 3</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li  (mouseenter)="hoverEvent('dropdown-about', true)" 
-            (mouseleave)="hoverEvent('dropdown-about', false)">
-                <a href="#about">About</a>
-                <div class="dropdown" id="dropdown-about">
-                    <ul>
-                        <li><a href="#about1">About 1</a></li>
-                        <li><a href="#about2">About 2</a></li>
-                        <li><a href="#about3">About 3</a></li>
-                    </ul>
-                </div>
-            </li>
+            <div class="dropdown" id="dropdown-otros">
+                <ul>
+                    <li><a href="#otros1">Otros 1</a></li>
+                    <li><a href="#otros2">Otros 2</a></li>
+                    <li><a href="#otros3">Otros 3</a></li>
+                </ul>
+            </div>
         </ul>
     </div>
     <!--a href="javascript:void(0);" class="icon" (click)="openNavMenu()">
@@ -44,31 +26,11 @@
     <div class="overlay" id="mobile-menu">
         <a (click)="closeNav()" class="close">&times;</a>
         <div (click)="closeNav()" class="overlay-content">
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+            <li><a href="#cosmetica">Cosmética</a></li>
+            <li><a href="#hidrotermal">Hidrotermal</a></li>
+            <li><a href="#masaje">Masaje</a></li>
+            <li><a href="#tratamientos">Tratamientos</a></li>
+            <li><a href="#otros">Otros</a></li>
         </div>
     </div>
-
-        <!--div class="logo">
-            <img src="" alt="Logo">
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Project</a></li>
-                <li><a href="about">About</a></li>
-            </ul>
-        </nav>
-        <a href="#" class="button"><button>Contact</button></a>
-        <a (click)="openNav()" href="#" class="menu">Menu</a>
-        <div class="overlay" id="mobile-menu">
-            <a (click)="closeNav()" href="#" class="close">&times;</a>
-            <div class="overlay-content">
-                <a href="#">Services</a>
-                <a href="#">Projects</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-            </div>
-        </div-->
 </header>

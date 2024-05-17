@@ -43,7 +43,8 @@
     position: absolute;
     width: max-content;
     box-shadow: 5px 5px 4px #ccc;
-    background-color: rgba(162, 210, 255, .98);
+    /*background-color: rgba(162, 210, 255, .98);*/
+    background-color: rgba(255, 175, 204, .98);
     border-radius: 10px;
     /*top: 145%;*/
     left: 0;
@@ -60,7 +61,9 @@
 
 .dropdown ul a {
     text-decoration: none;
-    color: #ffafcc;
+    color: rgba(162, 210, 255);
+    /*color: rgb(255, 175, 204);*/
+    /*color: #ffafcc;*/
     padding: 15px 30px;
     display: block;
 }
