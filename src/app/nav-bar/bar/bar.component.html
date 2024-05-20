@@ -1,5 +1,5 @@
 <header class="topnav">
-    <div class="logo"><a href="#"><img src="assets/ic_fluent_grid_24_regular.svg" alt="Logo"></a></div>
+    <div class="logo"><a href="#"><img src="../src/assets/ic_fluent_grid_24_regular.svg" alt="Logo"></a></div>
     <div id="myLinks" class="nav-links">
         <ul>
             <li><a href="#cosmetica">Cosmética</a></li>
@@ -9,14 +9,14 @@
             <li (mouseenter)="hoverEvent('dropdown-otros', true)" 
             (mouseleave)="hoverEvent('dropdown-otros', false)" >
                 <a href="#otros">Otros</a>
+                <div class="dropdown" id="dropdown-otros">
+                    <ul>
+                        <li><a href="#otros1">Otros 1</a></li>
+                        <li><a href="#otros2">Otros 2</a></li>
+                        <li><a href="#otros3">Otros 3</a></li>
+                    </ul>
+                </div>
             </li>
-            <div class="dropdown" id="dropdown-otros">
-                <ul>
-                    <li><a href="#otros1">Depilación</a></li>
-                    <li><a href="#otros2">Micropigmentación</a></li>
-            
-                </ul>
-            </div>
         </ul>
     </div>
     <!--a href="javascript:void(0);" class="icon" (click)="openNavMenu()">
