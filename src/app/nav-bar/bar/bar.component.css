@@ -1,5 +1,4 @@
 .topnav {
-    /*background-color: #cdb4db;*/
     background-color: #440216;
     width: 80%;
     display: flex;
@@ -19,7 +18,8 @@
     color: #e7c636; 
 }
 
-.topnav .nav-links {
+.topnav .nav-links,
+.topnav .overlay ul{
     list-style: none;
 }
 
@@ -44,10 +44,8 @@
     position: absolute;
     width: max-content;
     box-shadow: 5px 5px 4px #ccc;
-    /*background-color: rgba(162, 210, 255, .98);*/
     background-color: rgba(139, 5, 54, 0.95);
     border-radius: 10px;
-    /*top: 145%;*/
     left: 0;
     border: 1px solid #ccc;
 }
@@ -62,20 +60,10 @@
 
 .dropdown ul a {
     text-decoration: none;
-    color: rgb(179, 179, 180);
-    /*color: rgb(255, 175, 204);*/
-    /*color: #ffafcc;*/
+    color: #eceff1;
     padding: 15px 30px;
     display: block;
 }
-
-/*.topnav .nav-links ul ul {
-    display: block;
-    opacity: 0;
-    width: 200;
-    top: auto;
-    transition: opacity 80ms linear;
-}*/
 
 .topnav .logo {
     cursor: pointer;
@@ -119,7 +107,7 @@
     z-index: 1;
     left: 0;
     top: 0;
-    background-color: rgba(189, 224, 254, .95);
+    background-color: rgba(139, 5, 54, .95);
     overflow: hidden;
     transition: all 0.3s ease 0s; 
 }
@@ -129,7 +117,7 @@
     height: 100%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
 }
 
 .topnav .overlay a {
@@ -139,12 +127,7 @@
     transition: all 0.3s ease 0s;
     font-weight: 700;
     color: #eceff1;
-}
-
-.topnav .overlay a:hover,
-.topnav .overlay a:focus {
-    color: #ffafcc;
-    transform: scale(1.2);
+    text-decoration: none;
 }
 
 .topnav .overlay .close {
