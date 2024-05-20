@@ -1,5 +1,6 @@
 .topnav {
-    background-color: #cdb4db;
+    /*background-color: #cdb4db;*/
+    background-color: #440216;
     width: 80%;
     display: flex;
     position: fixed;
@@ -14,9 +15,9 @@
     transition: all 0.3s;
 }
 
-/*.topnav .nav-links a:hover {
-    color:#ffafcc;
-}*/
+.topnav .nav-links a:hover {
+    color: #e7c636; 
+}
 
 .topnav .nav-links {
     list-style: none;
@@ -44,7 +45,7 @@
     width: max-content;
     box-shadow: 5px 5px 4px #ccc;
     /*background-color: rgba(162, 210, 255, .98);*/
-    background-color: rgba(255, 175, 204, .98);
+    background-color: rgba(139, 5, 54, 0.95);
     border-radius: 10px;
     /*top: 145%;*/
     left: 0;
@@ -61,7 +62,7 @@
 
 .dropdown ul a {
     text-decoration: none;
-    color: rgba(162, 210, 255);
+    color: rgb(179, 179, 180);
     /*color: rgb(255, 175, 204);*/
     /*color: #ffafcc;*/
     padding: 15px 30px;

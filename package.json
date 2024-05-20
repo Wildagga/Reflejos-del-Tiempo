@@ -9,7 +9,7 @@
     "test": "ng test",
     "build:href": "ng build --base-href ./",
     "delete:docs": "rmdir /s /q docs",
-    "copy:dist": "xcopy dist\\reflejos-del-tiempo docs\\",
+    "copy:dist": "xcopy dist\\reflejos-del-tiempo docs\\ /s",
     "build:github": "npm run delete:docs && npm run build:href && npm run copy:dist"
   },
   "private": true,
