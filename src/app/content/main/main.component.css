@@ -1,6 +1,17 @@
 .container {
     padding-top: 100px;
+    margin: 0 15% 20px 15%;
 }
 .container h2 {
     padding-top: 100px;
+}
+
+p {
+    text-align: justify;
+}
+
+@media screen and (max-width: 800px){
+    .container {
+        margin: 0 5% 20px 5%;
+    }
 }
