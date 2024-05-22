@@ -102,10 +102,6 @@
     transition: all 0.3s ease 0s;
 }
 
-.topnav .menu button:hover {
-    transform: scale(1.2);
-}
-
 .topnav .overlay {
     height: 100%;
     width: 0;
@@ -144,9 +140,12 @@
     font-size: 65px;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1300px){
     .topnav {
         height: 60px;
+    }
+    .topnav .logo img {
+        height: 50px;
     }
     .nav-links {
         display: none;
