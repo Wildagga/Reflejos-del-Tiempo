@@ -1,8 +1,11 @@
-.container {
+.main-container {
+    padding-top: 110px;
+}
+.content {
     padding-top: 100px;
     margin: 0 15% 20px 15%;
 }
-.container h2 {
+.content h2 {
     padding-top: 100px;
 }
 
@@ -10,8 +13,45 @@ p {
     text-align: justify;
 }
 
+
+.header {
+    padding-top: 0px;
+}
+
+.intro-image {
+    position: absolute;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    background-image: url("../../../assets/David_by_Michelangelo_Fir_JBU015.jpg");
+    background-size: cover;
+    background-position-y: center;
+    opacity: .80;
+    z-index: 0;
+}
+
+.picture-text {
+    position: relative;
+    height: 650px;
+    display: flex;
+    align-items: center;
+}
+
+.header .picture-text p {
+    text-align: center;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: bold;
+}
 @media screen and (max-width: 800px){
-    .container {
-        margin: 0 5% 20px 5%;
+    .main-container {
+        padding-top: 80px;
+    }
+    .header {
+        padding-top: 0px;
+    }
+    .header .picture-text p {
+        font-size: 45px;
     }
 }
