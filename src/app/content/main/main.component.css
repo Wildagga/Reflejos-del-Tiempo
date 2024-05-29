@@ -9,6 +9,10 @@
     padding-top: 100px;
 }
 
+.VAL, .EN {
+    display: none;
+}
+
 p {
     text-align: justify;
 }

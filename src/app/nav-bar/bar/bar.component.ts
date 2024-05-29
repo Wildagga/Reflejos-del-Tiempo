@@ -39,4 +39,44 @@ export class BarComponent {
   closeNav() {
     document.getElementById("mobile-menu")!.style.width = "0%";
   }
+
+  changeLang(lang: string) {
+    if (lang == "ES") {
+      this.enableLang("ES");
+      this.disableLang("VAL");
+      this.disableLang("EN");
+    }
+    if (lang == "VAL") {
+      this.enableLang("VAL");
+      this.disableLang("ES");
+      this.disableLang("EN");
+    }
+    if (lang == "EN") {
+      this.enableLang("EN");
+      this.disableLang("VAL");
+      this.disableLang("ES");
+    }
+  }
+
+  enableLang(lang: string) {
+    let div_lang = Array.prototype.slice.call(document.getElementsByClassName(lang));
+    div_lang.forEach(element => {
+      element.style.display = "block";
+    });
+    let over_lang = Array.prototype.slice.call(document.getElementsByClassName("overlay-"+lang));
+    over_lang.forEach(element => {
+      element.style.display = "flex";
+    });
+  }
+
+  disableLang(lang: string) {
+    let div_lang = Array.prototype.slice.call(document.getElementsByClassName(lang));
+    div_lang.forEach(element => {
+      element.style.display = "none";
+    });
+    let over_lang = Array.prototype.slice.call(document.getElementsByClassName("overlay-"+lang));
+    over_lang.forEach(element => {
+      element.style.display = "none";
+    });
+  }
 }

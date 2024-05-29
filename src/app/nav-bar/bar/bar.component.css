@@ -9,10 +9,30 @@
     z-index: 2;
 }
 
+.overlay-VAL, .overlay-EN, .VAL, .EN {
+    display: none;
+}
+
 .topnav a {
     color: white;
     text-decoration: none;
     transition: all 0.3s;
+}
+
+.topnav .nav-links .lang {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav .nav-links .lang img {
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 0 1px;
+}
+
+.topnav .nav-links .lang img:hover {
+    transform: scale(1.2);
 }
 
 .topnav .nav-links a:hover {
@@ -138,6 +158,16 @@
     top: 20px;
     right: 45px;
     font-size: 65px;
+}
+
+.topnav .overlay .lang {
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+}
+
+.topnav .overlay .lang img {
+    margin: 0 5px;
 }
 
 @media screen and (max-width: 1300px){

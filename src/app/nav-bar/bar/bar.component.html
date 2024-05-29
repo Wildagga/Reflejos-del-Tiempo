@@ -1,36 +1,99 @@
 <header class="topnav">
     <div class="logo"><a href="#"><img src="assets/waves-7857446_1280.png" alt="Logo"></a></div>
     <div id="myLinks" class="nav-links">
-        <ul>
-            <li><a href="#cosmetica">Cosmética</a></li>
-            <li><a href="#hidrotermal">Hidrotermal</a></li>
-            <li><a href="#masaje">Masaje</a></li>
-            <li><a href="#tratamientos">Tratamientos</a></li>
-            <li (mouseenter)="hoverEvent('dropdown-otros', true)" 
-            (mouseleave)="hoverEvent('dropdown-otros', false)" >
-                <a href="#otros">Otros</a>
-                <div class="dropdown" id="dropdown-otros">
-                    <ul>
-                        <li><a href="#depilacion">Depilación</a></li>
-                        <li><a href="#micro">Micropigmentación</a></li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
+        <div class="ES">
+            <ul>
+                <li><a href="#cosmetica">Cosmética</a></li>
+                <li><a href="#hidrotermal">Hidrotermal</a></li>
+                <li><a href="#masaje">Masaje</a></li>
+                <li><a href="#tratamientos">Tratamientos</a></li>
+                <li (mouseenter)="hoverEvent('dropdown-otros-ES', true)"
+                    (mouseleave)="hoverEvent('dropdown-otros-ES', false)">
+                    <a href="#otros">Otros</a>
+                    <div class="dropdown" id="dropdown-otros-ES">
+                        <ul>
+                            <li><a href="#depilacion">Depilación</a></li>
+                            <li><a href="#micro">Micropigmentación</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="VAL">
+            <ul>
+                <li><a href="#cosmetica">Cosmètica</a></li>
+                <li><a href="#hidrotermal">Hidrotermal</a></li>
+                <li><a href="#masaje">Massatge</a></li>
+                <li><a href="#tratamientos">Tractaments</a></li>
+                <li (mouseenter)="hoverEvent('dropdown-otros-VAL', true)"
+                    (mouseleave)="hoverEvent('dropdown-otros-VAL', false)">
+                    <a href="#otros">Altres</a>
+                    <div class="dropdown" id="dropdown-otros-VAL">
+                        <ul>
+                            <li><a href="#depilacion">Depilació</a></li>
+                            <li><a href="#micro">Micropigmentació</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="EN">
+            <ul>
+                <li><a href="#cosmetica">Cosmetic</a></li>
+                <li><a href="#hidrotermal">Hydrothermal</a></li>
+                <li><a href="#masaje">Massage</a></li>
+                <li><a href="#tratamientos">Treatments</a></li>
+                <li (mouseenter)="hoverEvent('dropdown-otros-EN', true)"
+                    (mouseleave)="hoverEvent('dropdown-otros-EN', false)">
+                    <a href="#otros">Others</a>
+                    <div class="dropdown" id="dropdown-otros-EN">
+                        <ul>
+                            <li><a href="#depilacion">Hair removal</a></li>
+                            <li><a href="#micro">Micropigmentation</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="lang">
+            <img src="assets/ES_flag.svg" (click)="changeLang('ES')" height="25px" width="auto" alt="Español">
+            <img src="assets/VAL_flag.svg" (click)="changeLang('VAL')" height="25px" width="auto" alt="Valencià">
+            <img src="assets/UK_flag.svg" (click)="changeLang('EN')" height="25px" width="auto" alt="English">
+        </div>
     </div>
     <!--a href="javascript:void(0);" class="icon" (click)="openNavMenu()">
         <i class="fa fa-bars"><img src="assets/ic_fluent_grid_24_regular.svg" alt=""></i>
     </a-->
-    <a (click)="openNav()" class="menu" ><img height="40px" src="assets/269dd16fa1f5ff51accd09e7e1602267.png" alt="Menu"></a>
+    <a (click)="openNav()" class="menu"><img height="40px" src="assets/269dd16fa1f5ff51accd09e7e1602267.png"
+            alt="Menu"></a>
     <!--a (click)="openNav()" class="menu" ><img height="75px" src="assets/ic_fluent_grid_24_regular.svg" alt="Menu"></a-->
     <div class="overlay" id="mobile-menu">
         <a (click)="closeNav()" class="close">&times;</a>
-        <ul (click)="closeNav()" class="overlay-content">
-            <li><a href="#cosmetica">Cosmética</a></li>
-            <li><a href="#hidrotermal">Hidrotermal</a></li>
-            <li><a href="#masaje">Masaje</a></li>
-            <li><a href="#tratamientos">Tratamientos</a></li>
-            <li><a href="#otros">Otros</a></li>
-        </ul>
+            <ul (click)="closeNav()" class="overlay-ES overlay-content">
+                <li><a href="#cosmetica">Cosmética</a></li>
+                <li><a href="#hidrotermal">Hidrotermal</a></li>
+                <li><a href="#masaje">Masaje</a></li>
+                <li><a href="#tratamientos">Tratamientos</a></li>
+                <li><a href="#otros">Otros</a></li>
+            </ul>
+            <ul (click)="closeNav()" class="overlay-VAL overlay-content">
+                <li><a href="#cosmetica">Cosmètica</a></li>
+                <li><a href="#hidrotermal">Hidrotermal</a></li>
+                <li><a href="#masaje">Massatge</a></li>
+                <li><a href="#tratamientos">Tractaments</a></li>
+                <li><a href="#otros">Altres</a></li>
+            </ul>
+            <ul (click)="closeNav()" class="overlay-EN overlay-content">
+                <li><a href="#cosmetica">Cosmetic</a></li>
+                <li><a href="#hidrotermal">Hydrothermal</a></li>
+                <li><a href="#masaje">Massage</a></li>
+                <li><a href="#tratamientos">Treatments</a></li>
+                <li><a href="#otros">Others</a></li>
+            </ul>
+        <div class="lang">
+            <img src="assets/ES_flag.svg" (click)="changeLang('ES')" height="40px" width="auto" alt="Español">
+            <img src="assets/VAL_flag.svg" (click)="changeLang('VAL')" height="40px" width="auto" alt="Valencià">
+            <img src="assets/UK_flag.svg" (click)="changeLang('EN')" height="40px" width="auto" alt="English">
+        </div>
     </div>
 </header>
