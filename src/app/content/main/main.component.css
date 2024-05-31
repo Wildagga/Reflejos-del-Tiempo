@@ -1,12 +1,17 @@
 .main-container {
     padding-top: 110px;
+    height: 80%;
+    bottom: 0px;
 }
 .content {
     padding-top: 100px;
     margin: 0 15% 20px 15%;
 }
-.content h2 {
-    padding-top: 100px;
+
+p.ES,
+p.VAL,
+p.EN {
+    padding-top: 0em;
 }
 
 .VAL, .EN {
@@ -15,8 +20,27 @@
 
 p {
     text-align: justify;
+    padding-top: 1em;
 }
 
+.content img {
+    padding-top: 5em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 2em;
+}
+
+h3 {
+    font-size: 25px;
+    padding-top: 1.5em;
+}
+
+.footer {
+    background-color: bisque;
+}
 
 .header {
     padding-top: 0px;
@@ -48,6 +72,11 @@ p {
     font-style: italic;
     font-weight: bold;
 }
+
+.hidden {
+    visibility: hidden;
+}
+
 @media screen and (max-width: 1300px){
     .content {
     margin: 0 7% 20px 7%;
