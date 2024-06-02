@@ -25,6 +25,7 @@ p {
 
 .content img {
     padding-top: 5em;
+    height: 150px;
 }
 
 h2 {
@@ -99,5 +100,10 @@ h3 {
     .content p {
         font-size: 16;
         text-align: left;
+    }
+
+    .content img {
+        height: 80px;
+        width: auto;
     }
 }
